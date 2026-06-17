@@ -36,7 +36,11 @@ export const handleAction = (action: ActionType): void => {
     }
     case 'DEEP_LINK': {
       const { url } = action.payload;
-      Alert.alert('Quick Link Redirect', `Navigating to Kiddo category: ${url}`);
+      if (url === '/cart/checkout') {
+        useCartStore.getState().setCartOpen(true);
+      } else {
+        Alert.alert('Quick Link Redirect', `Navigating to Kiddo category: ${url}`);
+      }
       break;
     }
     case 'APPLY_MYSTERY_GIFT_COUPON': {

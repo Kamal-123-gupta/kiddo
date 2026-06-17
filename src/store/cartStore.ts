@@ -8,18 +8,17 @@ export interface CartItem {
 
 export interface CartState {
   items: Record<string, CartItem>;
+  isCartOpen: boolean;
+  setCartOpen: (open: boolean) => void;
   addToCart: (product: ProductType) => void;
   removeFromCart: (productId: string) => void;
   clearCart: () => void;
 }
 
-// Senior Design Decision: 
-// Utilizing a flat lookup Record<string, CartItem> to enable O(1) reads/writes.
-// By isolating states, we can create precise selectors (e.g. state => state.items[id]?.quantity)
-// so that a single product's quantity change only triggers a re-render of its own card and the total counter,
-// leaving the rest of the list unaffected.
 export const useCartStore = create<CartState>((set) => ({
   items: {},
+  isCartOpen: false,
+  setCartOpen: (open) => set({ isCartOpen: open }),
   addToCart: (product) =>
     set((state) => {
       const existing = state.items[product.id];
@@ -50,7 +49,7 @@ export const useCartStore = create<CartState>((set) => ({
       }
       return { items: updatedItems };
     }),
-  clearCart: () => set({ items: {} }),
+  clearCart: () => set({ items: {}, isCartOpen: false }),
 }));
 
 // Selectors for fine-grained re-render control
