@@ -1,0 +1,730 @@
+{
+  "theme": {
+    "primary": "#FF9933",
+    "background": "#FFF5E6"
+  },
+  "components": [
+    {
+      "id": "hero_banner_diaper",
+      "type": "BANNER_HERO",
+      "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&q=80",
+      "title": "Mega Diaper Savings Week!",
+      "subtitle": "Get up to 45% off premium baby wipes & pants.",
+      "action": {
+        "type": "DEEP_LINK",
+        "payload": {
+          "url": "/category/diapers-wipes"
+        }
+      }
+    },
+    {
+      "id": "snacks_collection",
+      "type": "DYNAMIC_COLLECTION",
+      "title": "Healthy Snacks Under ₹99",
+      "items": [
+        {
+          "id": "snack_1",
+          "name": "Organic Fruit Puree (Apple & Banana)",
+          "price": 85,
+          "originalPrice": 120,
+          "discount": "29%",
+          "image": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snack_1",
+              "name": "Organic Fruit Puree",
+              "price": 85,
+              "image": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "snack_2",
+          "name": "Gluten-Free Oats Puffs (Cheesy Pizza)",
+          "price": 75,
+          "originalPrice": 99,
+          "discount": "24%",
+          "image": "https://images.unsplash.com/photo-1599490659273-e3a72e8de69b?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snack_2",
+              "name": "Gluten-Free Oats Puffs",
+              "price": 75,
+              "image": "https://images.unsplash.com/photo-1599490659273-e3a72e8de69b?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "snack_3",
+          "name": "Freeze Dried Mango Chunks",
+          "price": 95,
+          "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snack_3",
+              "name": "Freeze Dried Mango Chunks",
+              "price": 95,
+              "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "snack_4",
+          "name": "Baked Veggie Crackers",
+          "price": 60,
+          "originalPrice": 80,
+          "discount": "25%",
+          "image": "https://images.unsplash.com/photo-1541795795328-f073b763494e?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snack_4",
+              "name": "Baked Veggie Crackers",
+              "price": 60,
+              "image": "https://images.unsplash.com/photo-1541795795328-f073b763494e?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "snack_5",
+          "name": "Strawberry Yogurt Bites",
+          "price": 90,
+          "originalPrice": 110,
+          "discount": "18%",
+          "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snack_5",
+              "name": "Strawberry Yogurt Bites",
+              "price": 90,
+              "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "snack_6",
+          "name": "Ragi Chocolate Cookies",
+          "price": 80,
+          "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snack_6",
+              "name": "Ragi Chocolate Cookies",
+              "price": 80,
+              "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "snack_7",
+          "name": "Roasted Foxnuts (Makhana)",
+          "price": 70,
+          "originalPrice": 90,
+          "discount": "22%",
+          "image": "https://images.unsplash.com/photo-1628117160759-b806d28b0732?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snack_7",
+              "name": "Roasted Foxnuts",
+              "price": 70,
+              "image": "https://images.unsplash.com/photo-1628117160759-b806d28b0732?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "snack_8",
+          "name": "Apple Cinnamon Teething Wafers",
+          "price": 99,
+          "image": "https://images.unsplash.com/photo-1596701062351-8c2c14d1fdd0?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "snack_8",
+              "name": "Teething Wafers",
+              "price": 99,
+              "image": "https://images.unsplash.com/photo-1596701062351-8c2c14d1fdd0?w=300&q=80"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "baby_care_grid",
+      "type": "PRODUCT_GRID_2X2",
+      "products": [
+        {
+          "id": "baby_care_1",
+          "name": "Mild Baby Shampoo (200ml)",
+          "price": 185,
+          "originalPrice": 220,
+          "discount": "15%",
+          "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "baby_care_1",
+              "name": "Mild Baby Shampoo",
+              "price": 185,
+              "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "baby_care_2",
+          "name": "Soothing Baby Lotion (150ml)",
+          "price": 160,
+          "originalPrice": 195,
+          "discount": "17%",
+          "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "baby_care_2",
+              "name": "Soothing Baby Lotion",
+              "price": 160,
+              "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "baby_care_3",
+          "name": "Natural Baby Powder (100g)",
+          "price": 120,
+          "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "baby_care_3",
+              "name": "Natural Baby Powder",
+              "price": 120,
+              "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "baby_care_4",
+          "name": "Moisturizing Baby Soap (75g)",
+          "price": 65,
+          "originalPrice": 85,
+          "discount": "23%",
+          "image": "https://images.unsplash.com/photo-1607006342460-be8703a557cb?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "baby_care_4",
+              "name": "Moisturizing Baby Soap",
+              "price": 65,
+              "image": "https://images.unsplash.com/photo-1607006342460-be8703a557cb?w=300&q=80"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_banner_toys",
+      "type": "BANNER_HERO",
+      "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&q=80",
+      "title": "Summer Toy Carnival!",
+      "subtitle": "Blocks, cars, and puzzles at up to 50% discount.",
+      "action": {
+        "type": "DEEP_LINK",
+        "payload": {
+          "url": "/category/toys"
+        }
+      }
+    },
+    {
+      "id": "diapers_collection",
+      "type": "DYNAMIC_COLLECTION",
+      "title": "Premium Diapers & Wipes",
+      "items": [
+        {
+          "id": "diaper_1",
+          "name": "Comfort Fit Baby Pants (M - 40 Pcs)",
+          "price": 549,
+          "originalPrice": 699,
+          "discount": "21%",
+          "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "diaper_1",
+              "name": "Comfort Fit Baby Pants (M)",
+              "price": 549,
+              "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "diaper_2",
+          "name": "Premium Soft Taped Diapers (S - 46 Pcs)",
+          "price": 499,
+          "originalPrice": 629,
+          "discount": "20%",
+          "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "diaper_2",
+              "name": "Premium Soft Taped (S)",
+              "price": 499,
+              "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "diaper_3",
+          "name": "Ultra Dry Diaper Pants (L - 34 Pcs)",
+          "price": 599,
+          "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "diaper_3",
+              "name": "Ultra Dry Diaper Pants (L)",
+              "price": 599,
+              "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "diaper_4",
+          "name": "Gentle Care Water Wipes (80 Pcs)",
+          "price": 149,
+          "originalPrice": 199,
+          "discount": "25%",
+          "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "diaper_4",
+              "name": "Gentle Care Wipes (80 Pcs)",
+              "price": 149,
+              "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "diaper_5",
+          "name": "Newborn Taped Diapers (24 Pcs)",
+          "price": 249,
+          "originalPrice": 299,
+          "discount": "16%",
+          "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "diaper_5",
+              "name": "Newborn Taped (24 Pcs)",
+              "price": 249,
+              "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "diaper_6",
+          "name": "Fragrance-Free Baby Wipes (Triple Pack)",
+          "price": 349,
+          "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "diaper_6",
+              "name": "Fragrance-Free Wipes 3x",
+              "price": 349,
+              "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "diaper_7",
+          "name": "Biodegradable Bamboo Wipes (60 Pcs)",
+          "price": 175,
+          "originalPrice": 220,
+          "discount": "20%",
+          "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "diaper_7",
+              "name": "Bamboo Wipes (60 Pcs)",
+              "price": 175,
+              "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "diaper_8",
+          "name": "Bed Protector Dry Sheets (Large)",
+          "price": 399,
+          "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "diaper_8",
+              "name": "Dry Sheets (L)",
+              "price": 399,
+              "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=300&q=80"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "unknown_component_v2_check",
+      "type": "NEW_COMPONENT_V2",
+      "title": "This block testing dynamic engine resilience",
+      "description": "If the renderer crashes, this test fails. It should gracefully skip this node and log a warning in developer console."
+    },
+    {
+      "id": "formula_grid",
+      "type": "PRODUCT_GRID_2X2",
+      "products": [
+        {
+          "id": "formula_1",
+          "name": "Organic Milk Formula Stage 1 (400g)",
+          "price": 799,
+          "originalPrice": 950,
+          "discount": "15%",
+          "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "formula_1",
+              "name": "Organic Formula Stage 1",
+              "price": 799,
+              "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "formula_2",
+          "name": "Follow-Up Formula Stage 2 (400g)",
+          "price": 820,
+          "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "formula_2",
+              "name": "Follow-Up Stage 2",
+              "price": 820,
+              "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "formula_3",
+          "name": "Growing Up Milk Formula Stage 3 (400g)",
+          "price": 850,
+          "originalPrice": 990,
+          "discount": "14%",
+          "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "formula_3",
+              "name": "Growing Up Stage 3",
+              "price": 850,
+              "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "formula_4",
+          "name": "Lactose Free Formula Powder (350g)",
+          "price": 920,
+          "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "formula_4",
+              "name": "Lactose Free Formula",
+              "price": 920,
+              "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "books_collection",
+      "type": "DYNAMIC_COLLECTION",
+      "title": "Interactive Story & Activity Books",
+      "items": [
+        {
+          "id": "book_1",
+          "name": "Pop-up Animals Picture Book",
+          "price": 249,
+          "originalPrice": 350,
+          "discount": "28%",
+          "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "book_1",
+              "name": "Pop-up Animals Book",
+              "price": 249,
+              "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "book_2",
+          "name": "Trace & Learn Alphabet Writing",
+          "price": 125,
+          "originalPrice": 180,
+          "discount": "30%",
+          "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "book_2",
+              "name": "Alphabet Writing Book",
+              "price": 125,
+              "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "book_3",
+          "name": "Bedtime Tales of Panchatantra",
+          "price": 199,
+          "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "book_3",
+              "name": "Panchatantra Tales Book",
+              "price": 199,
+              "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "book_4",
+          "name": "Fruits & Veggies Color Book",
+          "price": 95,
+          "originalPrice": 120,
+          "discount": "20%",
+          "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "book_4",
+              "name": "Fruits & Veggies Color Book",
+              "price": 95,
+              "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "book_5",
+          "name": "Water Magic Painting Notebook",
+          "price": 180,
+          "originalPrice": 225,
+          "discount": "20%",
+          "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "book_5",
+              "name": "Water Magic Painting Book",
+              "price": 180,
+              "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "book_6",
+          "name": "My First 100 Word Nursery Book",
+          "price": 150,
+          "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "book_6",
+              "name": "Nursery Word Book",
+              "price": 150,
+              "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "book_7",
+          "name": "Reusable Silicon Sticker Book",
+          "price": 299,
+          "originalPrice": 399,
+          "discount": "25%",
+          "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "book_7",
+              "name": "Silicon Sticker Book",
+              "price": 299,
+              "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "book_8",
+          "name": "Baby Touch Feel Textures Book",
+          "price": 220,
+          "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "book_8",
+              "name": "Touch & Feel Textures",
+              "price": 220,
+              "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "school_supplies_collection",
+      "type": "DYNAMIC_COLLECTION",
+      "title": "School & Art Supplies",
+      "items": [
+        {
+          "id": "school_1",
+          "name": "Triangular Grip Crayons (12 Pack)",
+          "price": 120,
+          "originalPrice": 150,
+          "discount": "20%",
+          "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "school_1",
+              "name": "Triangular Grip Crayons",
+              "price": 120,
+              "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "school_2",
+          "name": "Waterproof Pencil Bag (Blue Dino)",
+          "price": 95,
+          "originalPrice": 140,
+          "discount": "32%",
+          "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "school_2",
+              "name": "Waterproof Pencil Bag",
+              "price": 95,
+              "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "school_3",
+          "name": "Dust-Free Erasers (5 Pack)",
+          "price": 45,
+          "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "school_3",
+              "name": "Dust-Free Erasers 5x",
+              "price": 45,
+              "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "school_4",
+          "name": "Non-Toxic Clay Set (8 Colors)",
+          "price": 160,
+          "originalPrice": 200,
+          "discount": "20%",
+          "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "school_4",
+              "name": "Non-Toxic Clay Set",
+              "price": 160,
+              "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "school_5",
+          "name": "Kids Craft Scissors (Blunt Safety)",
+          "price": 75,
+          "originalPrice": 99,
+          "discount": "24%",
+          "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "school_5",
+              "name": "Safety Craft Scissors",
+              "price": 75,
+              "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "school_6",
+          "name": "Dual-Tip Pastel Highlighters (6 Pcs)",
+          "price": 150,
+          "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "school_6",
+              "name": "Pastel Highlighters 6x",
+              "price": 150,
+              "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "school_7",
+          "name": "A4 Sketchbook (50 Pages, 120GSM)",
+          "price": 110,
+          "originalPrice": 140,
+          "discount": "21%",
+          "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "school_7",
+              "name": "A4 Sketchbook 50 Pages",
+              "price": 110,
+              "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "school_8",
+          "name": "Watercolor Painting Kit (18 Shades)",
+          "price": 210,
+          "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "school_8",
+              "name": "Watercolor Painting Kit",
+              "price": 210,
+              "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&q=80"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

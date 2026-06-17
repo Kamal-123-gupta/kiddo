@@ -1,0 +1,169 @@
+{
+  "theme": {
+    "primary": "#0057FF",
+    "background": "#FFF200"
+  },
+  "components": [
+    {
+      "id": "airplane_overlay",
+      "type": "FULL_SCREEN_OVERLAY",
+      "animation_url": "https://assets9.lottiefiles.com/packages/lf20_o51B78.json"
+    },
+    {
+      "id": "back_to_school_banner",
+      "type": "BANNER_HERO",
+      "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=600&q=80",
+      "title": "Back To School Mega Sale! 🎒",
+      "subtitle": "Flat 30% discount on backpacks, boxes & water bottles.",
+      "action": {
+        "type": "DEEP_LINK",
+        "payload": {
+          "url": "/campaign/back-to-school"
+        }
+      }
+    },
+    {
+      "id": "lunchboxes_collection",
+      "type": "DYNAMIC_COLLECTION",
+      "title": "Premium Insulated Lunchboxes",
+      "items": [
+        {
+          "id": "lunch_1",
+          "name": "Stainless Steel 3-Tier Lunchbox",
+          "price": 450,
+          "originalPrice": 600,
+          "discount": "25%",
+          "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "lunch_1",
+              "name": "3-Tier Lunchbox",
+              "price": 450,
+              "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "lunch_2",
+          "name": "BPA-Free Leakproof Bento Box",
+          "price": 299,
+          "originalPrice": 399,
+          "discount": "25%",
+          "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "lunch_2",
+              "name": "Bento Box",
+              "price": 299,
+              "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "lunch_3",
+          "name": "Insulated Thermal Food Jar (300ml)",
+          "price": 549,
+          "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "lunch_3",
+              "name": "Thermal Food Jar",
+              "price": 549,
+              "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "lunch_4",
+          "name": "Double Compartment Lunch Bag",
+          "price": 199,
+          "originalPrice": 299,
+          "discount": "33%",
+          "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "lunch_4",
+              "name": "Lunch Bag",
+              "price": 199,
+              "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=300&q=80"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "school_bags_grid",
+      "type": "PRODUCT_GRID_2X2",
+      "products": [
+        {
+          "id": "bag_1",
+          "name": "Ergonomic Orthopedic Backpack",
+          "price": 1299,
+          "originalPrice": 1800,
+          "discount": "28%",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "bag_1",
+              "name": "Orthopedic Backpack",
+              "price": 1299,
+              "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "bag_2",
+          "name": "Waterproof Unicorn School Bag",
+          "price": 899,
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "bag_2",
+              "name": "Unicorn School Bag",
+              "price": 899,
+              "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "bag_3",
+          "name": "Space Cadet Backpack with Pencil Box",
+          "price": 999,
+          "originalPrice": 1499,
+          "discount": "33%",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "bag_3",
+              "name": "Space Cadet Backpack",
+              "price": 999,
+              "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "bag_4",
+          "name": "Classic Lightweight Daypack",
+          "price": 699,
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "bag_4",
+              "name": "Lightweight Daypack",
+              "price": 699,
+              "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

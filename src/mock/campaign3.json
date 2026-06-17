@@ -1,0 +1,112 @@
+{
+  "theme": {
+    "primary": "#FF0000",
+    "background": "#FFF3F3"
+  },
+  "components": [
+    {
+      "id": "confetti_overlay",
+      "type": "FULL_SCREEN_OVERLAY",
+      "animation_url": "https://assets5.lottiefiles.com/packages/lf20_ROzd1B.json"
+    },
+    {
+      "id": "mystery_carnival_banner",
+      "type": "BANNER_HERO",
+      "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&q=80",
+      "title": "Mystery Gift Carnival is LIVE! 🎊",
+      "subtitle": "Tap here to claim your instant surprise gift coupon code.",
+      "action": {
+        "type": "APPLY_MYSTERY_GIFT_COUPON",
+        "payload": {
+          "coupon": "MYSTERY50"
+        }
+      }
+    },
+    {
+      "id": "mystery_row",
+      "type": "DYNAMIC_COLLECTION",
+      "title": "Super Mystery Gift Toy Boxes",
+      "items": [
+        {
+          "id": "mystery_1",
+          "name": "Kiddo Mystery Toy Box (Gold Edition)",
+          "price": 499,
+          "originalPrice": 999,
+          "discount": "50%",
+          "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "mystery_1",
+              "name": "Gold Mystery Box",
+              "price": 499,
+              "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "mystery_2",
+          "name": "Mystery Plush Soft Toy Box",
+          "price": 349,
+          "originalPrice": 699,
+          "discount": "50%",
+          "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "mystery_2",
+              "name": "Mystery Plush Box",
+              "price": 349,
+              "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "mystery_3",
+          "name": "Mystery Toddler Board Games Combo",
+          "price": 599,
+          "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "mystery_3",
+              "name": "Mystery Board Games Combo",
+              "price": 599,
+              "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "mystery_4",
+          "name": "Mystery Craft & Painting Box",
+          "price": 299,
+          "originalPrice": 599,
+          "discount": "50%",
+          "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "mystery_4",
+              "name": "Mystery Craft Box",
+              "price": 299,
+              "image": "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=300&q=80"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "coupon_banner_section",
+      "type": "BANNER_HERO",
+      "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=600&q=80",
+      "title": "Use Code: MYSTERY50",
+      "subtitle": "Click to instantly apply code and unlock flat 50% discount on cart value.",
+      "action": {
+        "type": "APPLY_MYSTERY_GIFT_COUPON",
+        "payload": {
+          "coupon": "MYSTERY50"
+        }
+      }
+    }
+  ]
+}

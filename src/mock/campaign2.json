@@ -1,0 +1,169 @@
+{
+  "theme": {
+    "primary": "#00AEEF",
+    "background": "#EAFBFF"
+  },
+  "components": [
+    {
+      "id": "water_splash_overlay",
+      "type": "FULL_SCREEN_OVERLAY",
+      "animation_url": "https://assets4.lottiefiles.com/packages/lf20_5T95A2.json"
+    },
+    {
+      "id": "summer_festival_banner",
+      "type": "BANNER_HERO",
+      "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&q=80",
+      "title": "Summer Playhouse Festival ☀️",
+      "subtitle": "Petting zoo admissions, pool floats & outdoor games.",
+      "action": {
+        "type": "DEEP_LINK",
+        "payload": {
+          "url": "/campaign/summer-playhouse"
+        }
+      }
+    },
+    {
+      "id": "tickets_collection",
+      "type": "DYNAMIC_COLLECTION",
+      "title": "Petting Zoo Tickets & Feeding Passes",
+      "items": [
+        {
+          "id": "ticket_1",
+          "name": "General Admission Pass (1 Child + 1 Adult)",
+          "price": 350,
+          "originalPrice": 450,
+          "discount": "22%",
+          "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "ticket_1",
+              "name": "General Admission Pass",
+              "price": 350,
+              "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "ticket_2",
+          "name": "Alpaca Feeding Session Pass",
+          "price": 99,
+          "originalPrice": 150,
+          "discount": "34%",
+          "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "ticket_2",
+              "name": "Alpaca Feeding Pass",
+              "price": 99,
+              "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "ticket_3",
+          "name": "Bunny Petting Area Ticket",
+          "price": 75,
+          "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "ticket_3",
+              "name": "Bunny Petting Ticket",
+              "price": 75,
+              "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "ticket_4",
+          "name": "Full Access Family VIP Pass",
+          "price": 799,
+          "originalPrice": 999,
+          "discount": "20%",
+          "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "ticket_4",
+              "name": "Family VIP Pass",
+              "price": 799,
+              "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "summer_gear_grid",
+      "type": "PRODUCT_GRID_2X2",
+      "products": [
+        {
+          "id": "gear_1",
+          "name": "Inflatable Giant Beach Ball",
+          "price": 149,
+          "originalPrice": 249,
+          "discount": "40%",
+          "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "gear_1",
+              "name": "Inflatable Beach Ball",
+              "price": 149,
+              "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "gear_2",
+          "name": "Kids Flamingo Pool Float",
+          "price": 499,
+          "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "gear_2",
+              "name": "Flamingo Pool Float",
+              "price": 499,
+              "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "gear_3",
+          "name": "Silicone Beach Sand Bucket Set",
+          "price": 349,
+          "originalPrice": 449,
+          "discount": "22%",
+          "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "gear_3",
+              "name": "Beach Sand Bucket Set",
+              "price": 349,
+              "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=300&q=80"
+            }
+          }
+        },
+        {
+          "id": "gear_4",
+          "name": "Tinted UV Protection Sun Goggles",
+          "price": 249,
+          "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=300&q=80",
+          "action": {
+            "type": "ADD_TO_CART",
+            "payload": {
+              "id": "gear_4",
+              "name": "UV Protection Goggles",
+              "price": 249,
+              "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=300&q=80"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
